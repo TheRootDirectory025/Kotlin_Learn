@@ -11,10 +11,12 @@
 
 fun main(){
     // Stack
+    // primitive Datas
     val number : Int = 5
     val number2 : Float = 5.1f
 
     // Heap
+    // none-primitive Datas
     val name : String = "Kotlin"
 
 }
