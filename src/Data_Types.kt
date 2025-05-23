@@ -39,5 +39,8 @@ fun main() {
     // we can define a number with _ to make it easy to read in Kotlin !
     var number7 = 1_000_000_000
 
+    // UShort - UInt - ULong : Unsigned int and ETC ...
+    // we have to add u or U at the end of number !
+    var number8: UShort = 32799u
 
 }
