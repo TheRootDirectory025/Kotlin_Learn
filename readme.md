@@ -18,7 +18,7 @@ You can Learn with this Order :
     -->  if
     -->  when
     -->  loop
-    -->  if
+    -->  array
     -->  if
     -->  if
 
