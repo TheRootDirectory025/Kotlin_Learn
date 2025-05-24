@@ -17,7 +17,7 @@ You can Learn with this Order :
     -->  about Stack and heap ! 
     -->  if
     -->  when
-    -->  for
+    -->  loop
     -->  if
     -->  if
     -->  if

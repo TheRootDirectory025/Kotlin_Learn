@@ -22,5 +22,18 @@ fun main(){
     }
     println()
 
+    var counter : Int = 0
+
+    while (counter>0){
+        print("$counter ")
+        counter++
+    }
+
+    var counter2 : Int = 0
+
+    do {
+        print("$counter2 ")
+    } while (counter2<0)
+
 
 }

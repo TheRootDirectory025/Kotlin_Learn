@@ -54,20 +54,17 @@ fun main() {
     }
 
     // we can use in just like that
-    if(age in 1..10){
+    if (age in 1..10) {
+
+    } else if (age in 11..25) {
 
     }
-    else if (age in 11..25){
-
-    }
-    when (age){
+    when (age) {
         in 1..10 -> {}
         in 11..25 -> {}
         in 25..35 -> {}
 
     }
-
-
 
 
 }
