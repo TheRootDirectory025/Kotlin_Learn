@@ -88,6 +88,57 @@ fun main() {
     }
 
 
+    /**
+     *  if we change a variable value by assigning another object to it
+     *  if we change the object values then the main object values will be changed !
+     *
+     */
+    var obj1 = arrayOf<Int>(1, 2, 3)
+    var obj2 = arrayOf<Int>(1, 2, 5 , 7)
+    obj2 = obj1
+    obj2[0] = 1000
+
+    // the value of first unit is changed !
+    for (i in obj1) {
+        println(i)
+    }
+
+    var obj3 = arrayOf<Int>(1, 2, 3 , 10 , 8 , 9 , 17 , 21 , 30)
+    var obj4 = arrayOf<Int>(1, 2, 3)
+
+    // the operator == will be like .equals and it compares only hashCodes
+    // but contentEquals will compares the values !
+    println(obj3.equals(obj4))
+    println(obj3==obj4)
+    println(obj3.contentEquals(obj4))
+
+    /***
+     * we can also make a deepCopy from array
+     */
+    var obj5 = obj3.reversedArray()
+    var obj6 = obj3.sortedArray()
+    var obj7 = obj5.copyOf()
+
+    // first returns the first content
+    println(obj5.first())
+    // last returns the last content
+    println(obj5.last())
+    // shuffle will change the index of values randomly !
+    obj5.shuffle()
+    obj5.forEach { println(it) }
+    // fill will change values from fromindex to toindex -1 to setted value !
+    obj5.fill(99 , 2 , 5)
+
+
+    // string is a char array and it has methods !
+    var name : String = "Mohsen Bagheri"
+    println(name.length)
+    println(name.plus(" hello"))
+    println(name.replace("Mohsen" , "Mahdi"))
+
+
+
+
 
 
 }
